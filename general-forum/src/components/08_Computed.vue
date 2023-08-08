@@ -37,6 +37,8 @@ export default {
 				console.log(`value: ${value}`);
 				// value를 한 단어씩 나눈다.
 				console.log(value.split(''));
+				// 구조분해를 하는 대상이 문자일 경우 할당 시 [ ] 사용
+				// 객체일 경우 { }를 사용
 				[firstName.value, lastName.value] = value.split('');
 			},
 		});
