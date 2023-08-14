@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<LabelInput
+		<LabelInputTest
 			:modelValue="firstName"
 			@update:modelValue="value => $emit('update:firstName', value)"
 			label="성"
 		/>
-		<LabelInput
+		<LabelInputTest
 			:modelValue="lastName"
 			@update:modelValue="value => $emit('update:lastName', value)"
 			label="이름"
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import LabelInput from '@/components/LabelInput.vue';
+import LabelInputTest from '@/components/tutorial/LabelInputTest.vue';
 
 export default {
 	props: ['firstName', 'lastName'],
@@ -23,7 +23,7 @@ export default {
 		return {};
 	},
 	components: {
-		LabelInput,
+		LabelInputTest,
 	},
 };
 </script>

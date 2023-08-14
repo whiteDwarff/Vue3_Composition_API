@@ -13,7 +13,7 @@ import { computed } from 'vue';
 export default {
 	// 상위 컴포넌트에서 전달인자를 title로 넘김
 	props: ['title', 'label'], // value
-	emits: ['update:title'], // @input
+	emits: ['update:title'], // input
 	setup(props, { emit }) {
 		const value = computed({
 			get() {

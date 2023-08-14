@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<!-- nav -->
 		<NavView />
 		<MainView />
 	</div>
@@ -9,6 +8,7 @@
 <script>
 import NavView from '@/views/NavView.vue';
 import MainView from '@/views/MainView.vue';
+
 export default {
 	components: {
 		NavView,
@@ -16,5 +16,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="scss" scoped></style>
