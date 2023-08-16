@@ -1,5 +1,9 @@
 <template>
 	<div>
+		<!-- 
+			:modelValue로 하위 컴포넌트로 props
+			@update:modelValue는 하위 컴포넌트에서 올라온 이벤트,
+		-->
 		<LabelInput
 			:modelValue="firstName"
 			@update:modelValue="value => $emit('update:firstName', value)"
