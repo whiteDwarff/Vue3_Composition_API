@@ -1,19 +1,19 @@
 <template>
 	<main>
 		<div>
-			<ProvideInject />
+			<LifeCycle />
 		</div>
 	</main>
 </template>
 
 <script>
-import ProvideInject from '@/components/ProvideInject.vue';
+import LifeCycle from '@/components/lifecycle/LifeCycle.vue';
 export default {
 	setup() {
 		return {};
 	},
 	components: {
-		ProvideInject,
+		LifeCycle,
 	},
 };
 </script>
