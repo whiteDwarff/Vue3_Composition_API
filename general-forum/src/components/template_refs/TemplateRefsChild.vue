@@ -1,0 +1,24 @@
+<template>
+	<div>
+		{{ $parent }}
+		<ul>
+			<li v-for="fruit in $parent.fruits" :key="fruit">
+				{{ fruit }}
+			</li>
+		</ul>
+	</div>
+</template>
+
+<script>
+import { ref } from 'vue';
+
+export default {
+	setup() {
+		const msg = ref('hello');
+		const sayHello = () => alert(msg.value);
+		return { msg, sayHello };
+	},
+};
+</script>
+
+<style lang="scss" scoped></style>

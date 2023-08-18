@@ -1,19 +1,22 @@
 <template>
 	<main>
 		<div>
-			<LifeCycle />
+			<!-- <LifeCycle /> -->
+			<TemplateRefs />
 		</div>
 	</main>
 </template>
 
 <script>
-import LifeCycle from '@/components/lifecycle/LifeCycle.vue';
+//import LifeCycle from '@/components/lifecycle/LifeCycle.vue';
+import TemplateRefs from '@/components/template_refs/TemplateRefs.vue';
 export default {
 	setup() {
 		return {};
 	},
 	components: {
-		LifeCycle,
+		//LifeCycle,
+		TemplateRefs,
 	},
 };
 </script>
